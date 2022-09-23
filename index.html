@@ -18,28 +18,32 @@
 
 <body>
     <!-- HEADER -->
-    <header class="page-header">
+    <header >
+        <div class="page-header">
         <div class="container">
-        <div>
-            <select id="currency" name="currency">
+            <select class="page-header__select page-header__select--hide" id="currency" name="currency">
                 <option value="Euro" selected>EUR</option>
                 <option value="Dollars">USD</option>
                 <option value="Hryvnia">UAH</option>
                 <option value="Zloty">PLN</option>
             </select>
-            <input type="text" name="country" list="country" />
+            <input class="page-header__select page-header__select--hide"type="text" name="country" list="country" />
             <datalist id="country">
                 <option >Germany</option>
                 <option >England</option>
                 <option >Ukraine</option>
                 <option >Poland</option>
             </datalist>
-            <p><a href=""> shipping & free returns</a></p>
-            <a href="">Support</a>
+            <ul class="header-list">
+            <li><a class="header-list__link" href=""> Free shipping & free returns</a></li>
+            <li><a class="header-list__link header-list__link--hide " href="">Support</a></li>
+            </ul>
         </div>
-        <nav>
-            <a href="./index.html">skybox</a>
-            <ul>
+        </div>
+        <nav class="navigation">
+            <div class="container">
+            
+            <ul class="nav">
                 <li><a href="./index.html">NEW ARRIVALS</a></li>
                 <li><a href="">PLUS SIZE</a></li>
                 <li><a href="">LINGERIE</a></li>
@@ -47,31 +51,46 @@
                 <li><a href="">GIFTS</a></li>
                 <li><a href="">COLLECTIONS</a></li>
             </ul>
-            <ul>
-                <li><button type="button"><svg width="20" height="20"><use href="./images/svg.svg#icon-search"></use></svg></button></li>
-                <li><button type="button"><svg width="20" height="20">
+            <ul class="btn-list">
+                <li class="btn-list__item"><a class="logo-main" href="./index.html">Almerna</a></li>
+                <li class="btn-list__item"><button class="btn-header" type="button">
+                                <svg width="20" height="20" aria-label="Переключатель меню">
+                                    <use class="icon-menu" href="./images/svg.svg#icon-menu"></use>
+                                </svg></li>
+                <li class="btn-list__item"><button class="btn-header" type="button"><svg width="20" height="20">
+                    <use href="./images/svg.svg#icon-search"></use></svg></button></li>
+                   
+                <li class="btn-list__item"><button class="btn-header" type="button"><svg width="20" height="20">
                     <use href="./images/svg.svg#icon-like"></use>
                 </svg></button></li>
-                <li><button type="button"><svg width="20" height="20">
+                <li class="btn-list__item btn-list__item--hide"><button class="btn-header" type="button"><svg width="20" height="20">
                     <use href="./images/svg.svg#icon-user"></use>
                 </svg></button></li>
-                <li><button type="button"><svg width="20" height="20">
+              
+                <li class="btn-list__item"><button class="btn-header" type="button"><svg width="20" height="20">
                     <use href="./images/svg.svg#icon-shopping"></use>
                 </svg></button></li>
             </ul>
+            </div>
         </nav>
+        </div>
         </div>
     </header>
     <main>
         <!-- SECTION HERO -->
-        <section>
-            <h1>Our new summer 2021 Collection</h1>
-            <p>Free Luxury Gift Wrap on orders over £400</p>
-            <button type="button">Shop Now</button>
-            <button type="button">Fitting Room</button>
+        <section class="section-hero">
+            <div class="container">
+            <h1 class="section-title">Our new summer 2021 Collection</h1>
+            <p class="text">Free Luxury Gift Wrap on orders over £400</p>
+            <div class="btn-group">
+                <button class="btn-hero" type="button">Shop Now</button>
+                <button class="btn-hero" type="button">Fitting Room</button>
+            </div>
+            </div>
         </section>
         <!-- Trending products -->
         <section>
+            <div class="container">
             <h2>Shop Our Trending
             Products</h2>
             <ul>
@@ -95,6 +114,7 @@
                     <p>69,00€</p>
                 </li>
             </ul>
+            </div>
         </section>
         <!-- Must Have -->
         <section>
